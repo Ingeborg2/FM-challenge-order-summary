@@ -1,0 +1,171 @@
+@import '_variables.scss';
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    line-height: 1.625rem;
+    background-color: $primary-pale;
+    background-image: url('/images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    main {
+        .card {
+            background-color: #fff;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+    
+            .card__img {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+    
+            .card__content {
+                padding: 24px;            
+                text-align: center;
+    
+                h1, h2 {
+                    color: $neutral-dark;            
+                    font-weight: 900;
+                }
+        
+                h1 {
+                    color: $neutral-dark;
+                    font-size: 1.375rem;
+                    margin: 0px 17px;
+                }
+        
+                h2 {
+                    color: $neutral-dark;
+                    font-size: .875rem;
+                }
+        
+                p {
+                    color: $neutral-desaturated;
+                    font-size: .938rem;
+                    font-family: Red Hat Display;
+                    font-weight: 500;
+                }
+    
+                .annual-plan {
+                    background: $neutral-very-pale;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+                    border-radius: 11px;
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 16px;
+                    margin-bottom: 32px;
+
+                    .annual-plan__icon img {
+                        max-width: 48px;
+                        max-height: 48px;
+                     }
+    
+                    .annual-plan__pricing > h2, p {
+                        margin: 0px;
+                        text-align: left;
+                        font-size: 1rem;
+                    }
+    
+                    .annual-plan__change {
+                        margin-left: auto;
+    
+                        a {                        
+                            color: $primary-bright;
+                            font-size: 0.875rem;
+                            font-weight: 700;
+        
+                            &:hover {
+                                text-decoration: none;
+                                color: $primary-bright-pale;
+                            }
+                        }
+                    }
+                }
+    
+                button {
+                    background: $primary-bright;
+                    border: none;
+                    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+                    border-radius: 11px;
+                    color: #FFF;
+                    width: 100%;
+                    font-size: .938rem;
+                    font-weight: 900;
+                    padding: 15px 0px;
+                    margin-bottom: 32px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background: $primary-bright-pale;
+                    }
+                }
+    
+                .cancel a {
+                    color: $neutral-desaturated;
+                    font-size: .938rem;
+                    font-weight: 900;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: $neutral-dark;
+                    }
+                }
+            }
+        }
+    
+        .attribution { 
+            font-size: .688rem; 
+            text-align: center; 
+            & a {
+                color: $neutral-dark;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $mobile) {
+    body {
+        background-image: url('/images/pattern-background-desktop.svg');
+
+        main {
+            .card {
+                max-width: 450px;
+    
+                img {
+                    max-width: 100%;
+                }
+
+                .card__content {
+                    padding: 48px;  
+
+                    h1 {
+                        font-size: 1.75rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                    
+                    .annual-plan {
+                        padding: 24px; 
+                        gap: 20px;
+
+                        .annual-plan__pricing h2, p {
+                            font-size: 1rem;
+                        }
+    
+                        .annual-plan__change a {
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

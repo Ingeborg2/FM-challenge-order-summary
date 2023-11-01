@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* COLORS */
+/* SCREEN SIZES */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  background-color: #e0e8ff;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+body main .card .card__img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+body main .card .card__content {
+  padding: 48px;
+  text-align: center;
+}
+body main .card .card__content h1, body main .card .card__content h2 {
+  color: #1F2E55;
+  font-weight: 900;
+}
+body main .card .card__content h1 {
+  color: #1F2E55;
+  font-size: 28px;
+  margin: 0px 17px;
+}
+body main .card .card__content h2 {
+  color: #1F2E55;
+  font-size: 16px;
+}
+body main .card .card__content p {
+  color: #7280a7;
+  font-size: 16px;
+  font-family: Red Hat Display;
+  font-weight: 500;
+  line-height: 26px;
+}
+body main .card .card__content .annual-plan {
+  background: #f5f7ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+body main .card .card__content .annual-plan .annual-plan__pricing > h2, body main .card .card__content .annual-plan p {
+  margin: 0px;
+  text-align: left;
+}
+body main .card .card__content .annual-plan .annual-plan__change {
+  margin-left: auto;
+}
+body main .card .card__content .annual-plan .annual-plan__change a {
+  color: #3829e0;
+  font-size: 14px;
+  font-weight: 700;
+}
+body main .card .card__content .annual-plan .annual-plan__change a:hover {
+  text-decoration: none;
+  color: #766CF1;
+}
+body main .card .card__content button {
+  background: #3829e0;
+  border: none;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+  border-radius: 11px;
+  color: #FFF;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 15px 0px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+body main .card .card__content button:hover {
+  background: #766CF1;
+}
+body main .card .card__content .cancel a {
+  color: #7280a7;
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+}
+body main .card .card__content .cancel a:hover {
+  color: #1F2E55;
+}
+body main .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body main .attribution a {
+  color: #1F2E55;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+  body main .card {
+    max-width: 327px;
+  }
+  body main .card img {
+    max-width: 100%;
+  }
+  body main .card .card__content {
+    padding: 24px;
+  }
+  body main .card .card__content h1 {
+    font-size: 22px;
+  }
+  body main .card .card__content p {
+    font-size: 15px;
+  }
+  body main .card .card__content .annual-plan {
+    padding: 16px;
+    gap: 16px;
+  }
+  body main .card .card__content .annual-plan .annual-plan__icon img {
+    max-width: 48px;
+    max-height: 48px;
+  }
+  body main .card .card__content .annual-plan .annual-plan__pricing h1, body main .card .card__content .annual-plan p {
+    font-size: 14px;
+  }
+  body main .card .card__content .annual-plan .annual-plan__change a {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=styles.css.map */
